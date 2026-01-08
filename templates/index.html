@@ -3,7 +3,11 @@
   <body>
     <h2>Upload Your Song</h2>
     <form action="/upload" method="post" enctype="multipart/form-data">
+      <label>Genre:</label>
+      <input type="text" name="genre" placeholder="e.g., Hip Hop, Pop" required>
+      <br><br>
       <input type="file" name="song" accept=".mp3,.wav,.m4a" required>
+      <br><br>
       <input type="submit" value="Analyze">
     </form>
   </body>
